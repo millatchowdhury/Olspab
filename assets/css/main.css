@@ -343,7 +343,7 @@
     .header-menu-wrap {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: end;
         position: relative;
         padding-left: 80px;
     }
@@ -363,19 +363,21 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        text-align: right;
     }
 
     .header-menu-wrap ul li {
         display: inline-block;
         position: relative;
         padding: 30px 0;
-        margin-right: 30px;
+        margin-right: 0;
+        margin-left: 20px;
     }
 
     .header-menu-wrap ul li > a {
         display: block;
         font-family: "Space Grotesk", sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: -0.2px;
         font-weight: 600;
         text-transform: capitalize;
@@ -3281,3 +3283,174 @@
       flex: 50%;
     }
   }
+
+
+
+  /* custom css  */
+  /* search member */
+
+  .search-member{
+    margin-top: 70px;
+  }
+
+  .search-fild{
+    margin-top: 15px;
+  }
+  .search-fild form{}
+  .search-fild form input.comp-name {
+    width: 300px;
+  }
+  .search-fild form input.submit {
+    background: none;
+  }
+  .search-fild form input {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.alphabet{
+    margin-bottom: 40px;
+}
+.alphabet ul{
+    text-align: center;
+    list-style-type: none;
+}
+.alphabet li {
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    padding: 0 10px;
+}
+.alphabet li:first-child{
+    border-left: 1px solid #ddd;
+}
+.advanced-search {
+    background: #212121;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 38px;
+    margin-bottom: 40px;
+    margin-left: 92px;
+}
+.advanced-search a{
+    color: #fff;
+}
+
+.member-content {
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.mem-content-left {
+    width: 38%;
+    float: left;
+    border-right: 1px solid #ddd;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.mem-content-left h2 {
+    font-size: 22px;
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+.mem-content-right a {
+    background: #212121;
+    color: #fff;
+    padding: 10px 25px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+/* pagination start  */
+#container{
+    padding-top: 20px;
+  }
+  #pagination{
+    display: flex;
+    justify-content: center;
+  }
+  .blocks{
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #DDDDDD;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+  }
+  .blocks:not(:first-child){
+    margin-left: 5px;
+  }
+  .blocks:first-child{
+    border-radius: 10px 0 0 10px;
+  }
+  .blocks:last-child{
+    border-radius: 0 10px 10px 0;
+  }
+  .blocks:hover{
+    background-color: #DDDDDD;
+  }
+  #pagination a.active{
+    background-color: #e39c20;
+  }
+  .pagination-area{
+    margin-bottom: 70px;
+  }
+/* card  */
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 21px;
+    margin: 0 0 8px;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #555;
+}
+/* lunaShams custom css  */
+.local-internationa-cat{
+    border: 1px solid #ddd;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 30px;
+    min-height: 500px;
+}
+.local-internationa-cat a {
+    display: block;
+    background: #ddd;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+}
+.local-award {
+    border: 1px solid #ddd;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    min-height: 500px;
+}
+p.card-para-text {
+    font-size: 15px;
+    text-align: justify;
+    /* margin-top: 24px; */
+    padding: 10px;
+}
