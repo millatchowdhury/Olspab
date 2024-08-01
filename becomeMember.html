@@ -37,7 +37,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="assets/css/member_login.css" />
+    <link rel="stylesheet" href="assets/css/becomeMember.css" />
   </head>
 
   <body>
@@ -252,39 +252,49 @@
     </div>
     <!--/.popupsearch-box-->
 
-    <!--/.member_login-section-->
-    <!-- <div id="searchbox-overlay"></div> -->
+    <!--/.become member section-->
+    
 
-    <section class="member_login py-5">
-      <div class="member_login_container">
-        <div class="row">
-          <div class="col_left">
-           <div class="login_body">
-             <div class="login_text">
-              <img src="/assets/img/logo-light.png" alt="login logo" />
-            </div>
-           </div>
-          </div>
-          <div class="col_right">
-            <div class="right_side_container">
-              <div class="right_side_content">
-                <div class="login_header">
-                  <i class="fa-regular fa-user"></i>
-                  <h2>Member Login</h2>
-                </div>
-                <label for="">Email</label>
-                <div class="login_box">
-                  <span>
-                    <!-- <i class="fa-solid fa-envelope"> </i> -->
-                  </span>
-                  <input type="text" name="" id="" placeholder="Email" />
-                </div>
-                <button class="forget_btn">Forget Password</button>
-                <button class="next_btn">Next</button>
-              </div>
-            </div>
-          </div>
+    <section class="become_member py-5">
+      <div class="become_member_container">
+        <div class="become_member_content">
+            <h3>Want to be a members of Olspad</h3>
+            <h5>Member Registration</h5>
         </div>
+        <form action="">
+            <div class="company_name">
+                <label for="">Company Name</label>
+                <input type="text" name="" id="" placeholder="ie:Company Name">
+            </div>
+            <div class="company_others">
+                <div>
+                <label for="">Email (<span>Representative</span>)</label>
+                <input type="email" name="" id="" placeholder="ie: member@gmail.com">
+                </div>
+               <div>
+                 <label for="">Mobile (<span>Representative</span>) </label>
+                <input type="text" name="" id="" placeholder="ie: 01*********">
+               </div>
+               <div>
+                 <label for="">Password</label>
+                <input type="password" name="" id="" placeholder="ie: Enter Your Password">
+               </div>
+               <div>
+                 <label for="">Confirm Password</span></label>
+                <input type="password" name="" id="" placeholder="Re-type password">
+               </div>
+            </div>
+            <div class="check_box">
+                <input type="checkbox">You must agree with above <span>Terms & Conditions</span>
+            </div>
+            <div class="form_btn">
+              <button class="submit_btn">Submit</button>
+                <div class="form_btn_right">
+                  <span>If you are already registered ?</span>
+                <button class="login_btn">Login</button>
+                </div>
+            </div>
+        </form>
       </div>
     </section>
 
