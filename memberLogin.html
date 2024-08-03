@@ -33,11 +33,7 @@
     <link rel="stylesheet" href="assets/css/slider.css" />
     <link rel="stylesheet" href="assets/css/common-style.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/member_login.css" />
+    <link rel="stylesheet" href="assets/css/member_login.css">
   </head>
 
   <body>
@@ -55,13 +51,13 @@
     <!-- Site Preloader -->
 
     <header class="main-header">
-      <div class="container">
-        <div class="main-header-wapper">
-          <div class="site-logo">
+      <div class="">
+        <!-- <div class="main-header-wapper"> -->
+          <!-- <div class="site-logo">
             <a href="index.html"
-              ><img src="assets/img/logo-light.png" alt="Logo"
+              ><img src="assets/img/logo.png" alt="Logo"
             /></a>
-          </div>
+          </div> -->
           <div class="main-header-info">
             <div class="top-header">
               <ul class="top-left">
@@ -69,7 +65,10 @@
                   <i class="las la-phone-volume"></i
                   ><a href="./memberLogin.html">Membership</a>
                 </li>
-                <li><i class="las la-envelope-open"></i>Become A Member</li>
+                <li>
+                  <i class="las la-envelope-open"></i
+                  ><a href="./becomeMember.html">Become A Member</a>
+                </li>
               </ul>
               <div class="top-right">
                 <ul class="top-header-nav">
@@ -93,7 +92,10 @@
               </div>
             </div>
             <!--/.top-header-->
-            <div class="header-menu-wrap">
+            <div class="header-menu-wrap container">
+              <div class="site-logo">
+                             <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+                        </div>
               <ul class="nav-menu">
                 <li>
                   <a href="./index.html">Home</a>
@@ -251,17 +253,20 @@
       </div>
     </div>
     <!--/.popupsearch-box-->
+    <div id="searchbox-overlay"></div>
 
-    <!--/.member_login-section-->
-    <!-- <div id="searchbox-overlay"></div> -->
+   
+    
 
-    <section class="member_login py-5">
+    <!-- member login start -->
+   
+     <section class="member_login py-5">
       <div class="member_login_container">
         <div class="row">
           <div class="col_left">
            <div class="login_body">
              <div class="login_text">
-              <img src="/assets/img/logo-light.png" alt="login logo" />
+              <img src="/assets/img/logo_login.png" alt="login logo" />
             </div>
            </div>
           </div>
@@ -269,7 +274,7 @@
             <div class="right_side_container">
               <div class="right_side_content">
                 <div class="login_header">
-                  <i class="fa-regular fa-user"></i>
+                  <img src="./assets/img/account.png" alt="login account">
                   <h2>Member Login</h2>
                 </div>
                 <label for="">Email</label>
@@ -277,7 +282,7 @@
                   <span>
                     <!-- <i class="fa-solid fa-envelope"> </i> -->
                   </span>
-                  <input type="text" name="" id="" placeholder="Email" />
+                  <input type="text" name="" id="" placeholder="Your Email" />
                 </div>
                 <button class="forget_btn">Forget Password</button>
                 <button class="next_btn">Next</button>
@@ -288,9 +293,11 @@
       </div>
     </section>
 
-    <!-- clients says start  -->
-
-    <!-- clients says end  -->
+     <!-- member login end -->
+   
+    
+   
+    
 
     <footer class="footer-section">
       <div class="container">
@@ -298,7 +305,7 @@
           <div class="col-lg-3 col-sm-6 sm-padding">
             <div class="footer-widget">
               <a class="footer-logo" href="index.html"
-                ><img src="assets/img/logo-light.png" alt="logo"
+                ><img src="assets/img/logo_white.png" alt="logo"
               /></a>
               <p>
                 Our success in creating business solutions is due in part
@@ -362,6 +369,7 @@
             </div>
           </div>
         </div>
+        <hr>
         <div class="copyright-text">
           © <span id="currentYear"></span> Radisson Digital Technology, All
           Rights Reserved. Design By

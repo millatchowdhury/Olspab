@@ -20,7 +20,7 @@
   align-items: center;
 }
 .login_text img {
-  width: 80%;
+  width: 90%;
   padding: 20px;
 }
 .login_body {
@@ -48,7 +48,10 @@
 }
 .login_box input {
   width: 90%;
+  padding-left: 10px;
 }
+
+
 .right_side_content .login_header {
   width: 320px;
   text-align: center;
@@ -57,8 +60,8 @@
   font-size: 20px;
   font-weight: 200;
 }
-.login_header i {
-  font-size: 40px;
+.login_header img {
+  width: 25%;
 }
 
 .forget_btn {
