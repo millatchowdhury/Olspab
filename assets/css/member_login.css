@@ -5,6 +5,7 @@
   margin: 0 auto;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   border-radius: 10px;
+  display: flex;
   /* background-color: rgba(109, 200, 190, .6); */
 }
 .col_left {
@@ -51,7 +52,6 @@
   padding-left: 10px;
 }
 
-
 .right_side_content .login_header {
   width: 320px;
   text-align: center;
@@ -91,4 +91,27 @@
   background-color: #6dc8be;
   color: #f4f4f4;
   box-shadow: none;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+  /* .col_left {
+    display: none;
+  } */
+
+  /* .row{
+    flex-direction: column;
+  } */
+  .member_login_container {
+    width: 100%;
+  }
+  .login_box {
+    width: 100%;
+  }
+  .login_box input {
+    width: 100%;
+  }
+  .forget_btn {
+    padding: 5px 40px;
+  }
 }
