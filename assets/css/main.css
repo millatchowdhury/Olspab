@@ -602,6 +602,9 @@
   .header-menu-wrap .nav-menu {
     display: none;
   }
+  /* .site-logo{
+    width: 35%;
+  } */
 
   /* Mobile Menu */
   .navigation-menu {
@@ -620,7 +623,8 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 15px;
+    margin-bottom: 22px;
     -webkit-transition: transform 330ms ease-out;
     -moz-transition: transform 330ms ease-out;
     -o-transition: transform 330ms ease-out;
@@ -1569,7 +1573,7 @@
   /* background-image: url(../img/service-background.jpg); */
   background-image: linear-gradient(to right, #57ebde, #aefb2a);
   height: 517px;
-   filter: grayscale(50%);
+  filter: grayscale(50%);
   opacity: 0.5;
 }
 
@@ -1711,6 +1715,9 @@
     row-gap: 15px;
     text-align: center;
     padding: 20px;
+  }
+  .service-section .bg-half {
+    height: 1155px;
   }
 }
 
@@ -2909,7 +2916,13 @@
 
   .cta-inner .section-heading h2,
   .cta-area .section-heading h2 {
-    font-size: 32px;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -85px;
+  }
+  .cta-area .section-heading h2 span{
+    margin-left: 0px;
   }
 }
 
@@ -3033,7 +3046,7 @@
 
 .accordion-button:not(.collapsed) {
   color: #fff;
-  background-color: #ff9900;
+  background-color: #73BF43;
 }
 
 .accordion-button:not(.collapsed):after {
@@ -3599,4 +3612,9 @@ p.card-para-text {
   text-align: justify;
   /* margin-top: 24px; */
   padding: 10px;
+}
+
+/* circular */
+#circular{
+  font-size: 20px;
 }
