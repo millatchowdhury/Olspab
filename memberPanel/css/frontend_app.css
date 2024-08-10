@@ -2336,7 +2336,14 @@ pre code {
     border: 1px solid #ced4da;
     border-radius: .25rem;
     -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.form-control, .form-control:focus {
+    border-color: #212529;
+    color: #272727;
+    opacity: 1;
+    font-weight: 600;
+    font-size: 13px;
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -2361,38 +2368,38 @@ pre code {
     background-color: #fff;
     border-color: #caebe7;
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(109, 200, 190, .25)
+    box-shadow: 0 0 0 .2rem rgba(109, 200, 190, .25);
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #6c757d
+    color: #6c757d;
 }
 
 .form-control::-moz-placeholder {
-    color: #6c757d
+    color: #6c757d;
 }
 
 .form-control:-ms-input-placeholder {
-    color: #6c757d
+    color: #6c757d;
 }
 
 .form-control::-ms-input-placeholder {
-    color: #6c757d
+    color: #6c757d;
 }
 
 .form-control::placeholder {
-    color: #6c757d
+    color: #6c757d;
 }
 
 .form-control:disabled,
 .form-control[readonly] {
     background-color: #e9ecef;
-    opacity: 1
+    opacity: 1;
 }
 
 select.form-control:focus::-ms-value {
     color: #495057;
-    background-color: #fff
+    background-color: #fff;
 }
 
 .form-control-file,
@@ -2433,7 +2440,7 @@ select.form-control:focus::-ms-value {
     color: #212529;
     background-color: transparent;
     border: solid transparent;
-    border-width: 1px 0
+    border-width: 1px 0;
 }
 
 .form-control-plaintext.form-control-lg,
@@ -2447,7 +2454,7 @@ select.form-control:focus::-ms-value {
     padding: .25rem .5rem;
     font-size: .875rem;
     line-height: 1.5;
-    border-radius: .2rem
+    border-radius: .2rem;
 }
 
 .form-control-lg {
@@ -2455,22 +2462,22 @@ select.form-control:focus::-ms-value {
     padding: .5rem 1rem;
     font-size: 1.25rem;
     line-height: 1.5;
-    border-radius: .3rem
+    border-radius: .3rem;
 }
 
 select.form-control[multiple],
 select.form-control[size],
 textarea.form-control {
-    height: auto
+    height: auto;
 }
 
 .form-group {
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
 
 .form-text {
     display: block;
-    margin-top: .25rem
+    margin-top: .25rem;
 }
 
 .form-row {
@@ -40523,7 +40530,7 @@ button.close.text-light.search-box-close {
 }
 
 .vdp-datepicker:before {
-    content: "\F0EF";
+    /* content: "\F0EF"; */
     font-family: Material Design Icons;
     font-weight: 400;
     position: absolute;
@@ -40531,7 +40538,7 @@ button.close.text-light.search-box-close {
     z-index: 100
 }
 
-.vdp-datepicker input {
+.vdp-datepicker > input {
     width: 100%;
     margin: 0;
     position: absolute;
