@@ -306,6 +306,7 @@
       align-items: center;
       justify-content: space-between;
       position: relative;
+      margin-bottom: -100px;
       /* padding-left: 80px; */
     }
   
@@ -351,6 +352,7 @@
       -webkit-font-smoothing: antialiased;
       position: relative;
       z-index: 1;
+      width: max-content;
     }
   
     .header-menu-wrap li ul {
@@ -973,6 +975,7 @@
     padding-top: 100px;
     position: relative;
     z-index: 1;
+    margin-top: 40px;
   }
   
   .footer-section:before {
@@ -990,7 +993,7 @@
   }
   
   .footer-section:after {
-    background-image: url(../img/square-pattern.png);
+    background-image: url(/assets/img/square-pattern.png);
     background-size: 20px;
     opacity: 0.8;
     content: "";
@@ -1019,13 +1022,14 @@
   }
   
   .footer-area .col-lg-3:nth-child(2) {
-    padding-left: 70px;
+    padding-left: 30px;
   }
   
   .footer-widget h3 {
     color: var(--white-color);
     font-weight: 700;
     margin-bottom: 20px;
+    width: max-content;
   }
   
   .footer-widget li a,
