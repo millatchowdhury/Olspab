@@ -29,6 +29,7 @@ form label {
 .company_name > input {
   display: block;
   width: 75%;
+  padding-left: 10px;
 }
 
 .company_others {
@@ -44,6 +45,7 @@ form label {
 }
 .company_others input {
   width: 150%;
+  padding-left: 10px;
 }
 .check_box {
   margin-bottom: 30px;

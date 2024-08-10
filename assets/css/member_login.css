@@ -102,6 +102,9 @@
   /* .row{
     flex-direction: column;
   } */
+   .member_login_container{
+    /* flex-direction: column-reverse; */
+   }
   .member_login_container {
     width: 100%;
   }
