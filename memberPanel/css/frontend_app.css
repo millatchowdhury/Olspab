@@ -38301,8 +38301,9 @@ info span:before {
 
 .col-form-label-sm,
 label {
-    font-weight: 600;
-    margin-bottom: 0
+    font-weight: 800;
+    margin-bottom: 0;
+    color: black;
 }
 
 .custom-checkbox .custom-control-input:disabled:checked~.custom-control-label:before,
