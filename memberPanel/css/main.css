@@ -15,7 +15,7 @@
   }
   
   .site-logo img {
-    width: 35%;
+    width: 60%;
   }
   
   .sticky-header {
@@ -56,6 +56,7 @@
     justify-content: space-between;
     /* position: relative; */
     padding-left: 80px;
+    padding-top: 12px;
   }
   
   /* .top-header:before {
