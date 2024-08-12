@@ -254,15 +254,16 @@
                 </div>
                 <div class="card sidemenu shadow-sm mb-3">
                   <div class="card-body p-0">
-                    <nav class="navbar navbar-expand-lg p-0"><button type="button" data-toggle="collapse" data-target="#dashMenu"
-                        aria-controls="dashMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler m-2"><span
-                          class="fas fa-bars pr-1"></span>
+                    <nav class="navbar navbar-expand-lg p-0"><button type="button" data-toggle="collapse"
+                        data-target="#dashMenu" aria-controls="dashMenu" aria-expanded="false"
+                        aria-label="Toggle navigation" class="navbar-toggler m-2"><span class="fas fa-bars pr-1"></span>
                         Profile Menu
                       </button>
                       <div id="dashMenu" class="collapse navbar-collapse">
                         <ul class="nav flex-column w-100">
                           <li class="nav-item">
-                            <a href="../memberPanel/index.html" class="nav-link active router-link-active" aria-current="page">
+                            <a href="../memberPanel/index.html" class="nav-link active router-link-active"
+                              aria-current="page">
                               <i class="fa-solid fa-angles-right"></i> Dashboard</a>
                           </li>
                           <li class="nav-item">
@@ -336,13 +337,79 @@
                     <div class="d-flex align-items-center justify-content-between">
                       <h5 class="text-uppercase font-weight-bold px-3 mb-0">
                         Payment History
-                      </h5> <span>
-                        <div data-v-6989252e="" class="memberInfoCreate"><button data-v-6989252e="" type="button"
-                            class="btn btn btn-success btn-sm mr-4 btn-secondary">Add your bank details</button> <!---->
+                      </h5>
+                      <span>
+                        <div data-v-6989252e="" class="memberInfoCreate">
+                          <button data-v-6989252e="" type="button" class="btn btn btn-success btn-sm mr-4 btn-secondary"
+                            id="addBtn" data-toggle="modal" data-target="#exampleModal">
+                            Add your bank details
+                          </button> <!---->
                         </div>
                       </span>
                     </div>
                   </div>
+
+                  <!-- modal start  -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Submit Your Bank Info</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div id="modal-prevent-closing___BV_modal_body_" class="modal-body">
+                            <div data-v-6989252e="" class="col-lg-12">
+                              <form data-v-6989252e="" id="form"><input data-v-6989252e="" type="hidden">
+                                <div data-v-6989252e="" class="row">
+                                  <div data-v-6989252e="" class="col-lg-12 mb-3"><label data-v-6989252e=""
+                                      for="bank_name">Bank
+                                      Name</label>
+                                    <input data-v-6989252e="" id="bank_name" name="bank_name" type="text"
+                                      placeholder="Bank Name" required="required" aria-required="true"
+                                      class="form-control form-control-sm form-control"> <!---->
+                                  </div>
+                                  <div data-v-6989252e="" class="col-lg-12 mb-3"><label data-v-6989252e=""
+                                      for="account_name">Account
+                                      Name</label>
+                                    <input data-v-6989252e="" id="account_name" name="account_name" type="text"
+                                      placeholder="Account Name" required="required" aria-required="true"
+                                      class="form-control form-control-sm form-control"> <!---->
+                                  </div>
+                                  <div data-v-6989252e="" class="col-lg-12 mb-3"><label data-v-6989252e=""
+                                      for="account_no">Account
+                                      Number</label>
+                                    <input data-v-6989252e="" id="account_no" name="account_no" type="text"
+                                      placeholder="Account Number" required="required" aria-required="true"
+                                      class="form-control form-control-sm form-control"> <!---->
+                                  </div>
+                                  <div data-v-6989252e="" class="col-lg-12 mb-3"><label data-v-6989252e=""
+                                      for="routing_no">Routing
+                                      Number</label>
+                                    <input data-v-6989252e="" id="routing_no" name="routing_no" type="text"
+                                      placeholder="Routing Number" required="required" aria-required="true"
+                                      class="form-control form-control-sm form-control"> <!---->
+                                  </div>
+                                  <div data-v-6989252e="" class="col-md-12 mb-3"><label data-v-6989252e=""
+                                      for="branch">Branch</label>
+                                    <input data-v-6989252e="" id="branch" name="branch" type="text"
+                                      placeholder="Branch Name" required="required" aria-required="true"
+                                      class="form-control form-control form-control"> <!---->
+                                  </div>
+                                </div> <button data-v-6989252e="" type="submit"
+                                  class="btn mt-3 modal-button col-lg-12 btn-outline-success">Submit</button>
+                              </form> <button data-v-6989252e="" data-dismiss="modal" type="button"
+                                class="btn mt-2 modal-button d-block w-100 btn-outline-danger">Close Me</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+           <!-- modal start  -->
                   <div class="card-body">
                     <div class="table-responsive">
                       <table class="table table-striped">
@@ -449,85 +516,93 @@
 
   <!-- header end -->
 
-<footer class="footer-section">
-  <div class="container">
-    <div class="row footer-area">
-      <div class="col-lg-3 col-sm-6 sm-padding">
-        <div class="footer-widget">
-          <a class="footer-logo" href="index.html"><img src="../assets/img/logo_white.png" alt="logo" /></a>
-          <p>
-            Our success in creating business solutions is due in part
-            spacially to talented committed team.
-          </p>
-          <ul class="footer-social">
-            <li>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row footer-area">
+        <div class="col-lg-3 col-sm-6 sm-padding">
+          <div class="footer-widget">
+            <a class="footer-logo" href="index.html"><img src="../assets/img/logo_white.png" alt="logo" /></a>
+            <p>
+              Our success in creating business solutions is due in part
+              spacially to talented committed team.
+            </p>
+            <ul class="footer-social">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 sm-padding">
-        <div class="footer-widget">
-          <h3>Important link</h3>
-          <ul class="footer-list">
-            <li><a href="">About Us</a></li>
-            <li><a href="">ICT Division, Bangladesh</a></li>
-            <li><a href="">a2i Access to Information</a></li>
-            <li><a href="">National Board of Revenue</a></li>
-            <li><a href="">(NBR), Bangladesh</a></li>
-            <li><a href="">Ministry of Commerce</a></li>
-          </ul>
+        <div class="col-lg-3 col-sm-6 sm-padding">
+          <div class="footer-widget">
+            <h3>Important link</h3>
+            <ul class="footer-list">
+              <li><a href="">About Us</a></li>
+              <li><a href="">ICT Division, Bangladesh</a></li>
+              <li><a href="">a2i Access to Information</a></li>
+              <li><a href="">National Board of Revenue</a></li>
+              <li><a href="">(NBR), Bangladesh</a></li>
+              <li><a href="">Ministry of Commerce</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 sm-padding">
-        <div class="footer-widget">
-          <h3>Current Projects</h3>
-          <ul class="footer-list">
-            <li><a href="">SEIP</a></li>
-            <li><a href="">ITC SheTrades</a></li>
-            <li><a href="">PUM Netherlands</a></li>
-            <li><a href="">BASIS Japan Desk</a></li>
-            <li><a href="">STP-1</a></li>
-            <li><a href="">BASIS eGov Hub</a></li>
-          </ul>
+        <div class="col-lg-3 col-sm-6 sm-padding">
+          <div class="footer-widget">
+            <h3>Current Projects</h3>
+            <ul class="footer-list">
+              <li><a href="">SEIP</a></li>
+              <li><a href="">ITC SheTrades</a></li>
+              <li><a href="">PUM Netherlands</a></li>
+              <li><a href="">BASIS Japan Desk</a></li>
+              <li><a href="">STP-1</a></li>
+              <li><a href="">BASIS eGov Hub</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="col-lg-3 col-sm-6 sm-padding">
-        <div class="footer-widget">
-          <h3>Location</h3>
-          <address>
-            BDBL Bhaban (Level 5 - West), <br />
-            12 Kawran Bazar, <br />
-            Dhaka -1215
-          </address>
-          <ul class="footer-list">
-            <li><a href="">Phone: 16488</a></li>
-            <li><a href="">Email: info@olspab.org.bd</a></li>
-          </ul>
+        <div class="col-lg-3 col-sm-6 sm-padding">
+          <div class="footer-widget">
+            <h3>Location</h3>
+            <address>
+              BDBL Bhaban (Level 5 - West), <br />
+              12 Kawran Bazar, <br />
+              Dhaka -1215
+            </address>
+            <ul class="footer-list">
+              <li><a href="">Phone: 16488</a></li>
+              <li><a href="">Email: info@olspab.org.bd</a></li>
+            </ul>
+          </div>
         </div>
       </div>
+      <hr>
+      <div class="copyright-text">
+        © <span id="currentYear"></span> Radisson Digital Technology, All
+        Rights Reserved. Design By
+        <a href="" target="_blank">Radisson Web Team</a>
+      </div>
     </div>
-    <hr>
-    <div class="copyright-text">
-      © <span id="currentYear"></span> Radisson Digital Technology, All
-      Rights Reserved. Design By
-      <a href="" target="_blank">Radisson Web Team</a>
-    </div>
-  </div>
-</footer>
+  </footer>
   <!--/.footer-section-->
+
+
+
+
+
+
+
+
 
 
   <!-- All js here -->
@@ -545,6 +620,11 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/frontend_app.js"></script>
+
+  <!-- cdn -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
