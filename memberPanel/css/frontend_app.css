@@ -11087,7 +11087,7 @@ button.bg-black:hover {
 }
 
 .font-weight-bold {
-    font-weight: 700 !important
+    /* font-weight: 700 !important */
 }
 
 .font-weight-bolder {
@@ -38383,7 +38383,7 @@ label {
 
 @media (max-width:768px) {
     main {
-        margin-top: 140px
+        /* margin-top: 140px; */
     }
 }
 

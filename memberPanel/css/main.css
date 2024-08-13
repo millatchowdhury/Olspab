@@ -230,6 +230,7 @@
   /* Burger Menu */
   .menu-right-item .mobile-menu-icon {
     display: none;
+    margin-top: -45px;
   }
   
   .burger-menu {
