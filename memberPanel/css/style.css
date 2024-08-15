@@ -191,7 +191,7 @@ table {
     width: 100%;
 }
 .print-content {
-    padding: 0 30px;
+    padding: 0 30px;  
     margin-top: 110px;
     page-break-after: always;
 }
@@ -206,6 +206,7 @@ table {
     font-size: 15px;
     font-weight: 700;
     text-align: center;
+	color: black;
 }
 .dash-text {
     position: relative;
@@ -231,4 +232,18 @@ table {
 	font-weight: normal !important;
 }
 
+/* invoice */
+.invoice-frontend {
+    position: relative;
+    max-width: 660px;
+    height: 1180px;
+    margin: 0 auto;
+}
+.invoice-frontend > img {
+    height: 1140px
+}
+.text-color{
+	color: darkgreen;
+}
 /* custom css */
+
