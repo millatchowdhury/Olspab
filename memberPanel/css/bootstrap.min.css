@@ -552,7 +552,7 @@ fieldset {
 }
 
 legend {
-    float: left;
+    /* float: left; */
     width: 100%;
     padding: 0;
     margin-bottom: .5rem;
