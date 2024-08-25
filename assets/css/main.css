@@ -3618,3 +3618,7 @@ p.card-para-text {
 #circular{
   font-size: 20px;
 }
+
+#legend{
+  float: none;
+}
